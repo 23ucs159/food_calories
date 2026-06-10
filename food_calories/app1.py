@@ -4,10 +4,15 @@ import joblib
 import matplotlib.pyplot as plt
 from fpdf import FPDF
 import streamlit.components.v1 as components
+import os   # ✅ ADD THIS
 
+# ✅ FIXED MODEL LOADING
+model_path = os.path.join(os.path.dirname(__file__), "food_model.pkl")
+model = joblib.load(model_path)
 
-model = joblib.load("food_model.pkl")
-df = pd.read_csv("food_nutrition.csv")
+# (optional but recommended fix for CSV too)
+csv_path = os.path.join(os.path.dirname(__file__), "food_nutrition.csv")
+df = pd.read_csv(csv_path)
 
 df["food_name"] = df["food_name"].astype(str).str.lower().str.strip()
 
