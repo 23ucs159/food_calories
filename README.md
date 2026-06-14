@@ -1,3 +1,10 @@
+#### the app was deployed in streamlit 
+demo link:
+(https://foodcalories-xma6hanp64rqgcpbnelgtn.streamlit.app/)
+
+Enter a food item name (example: Apple, Banana, Burger)
+Click on Analyze Food button
+
 # 1.1 PROJECT OVERVIEW
 
 The AI Food Nutrition & Health Analyzer is a machine learning-based application developed to help users understand the nutritional value of different food items and make healthier dietary choices. The system allows users to enter the name of a food item and instantly receive detailed nutritional information such as calories, protein, carbohydrates, fat, iron, and vitamin C content.
@@ -62,8 +69,6 @@ If it does not open, copy the URL shown in Command Prompt and paste it into a br
 
 Step 5: Analyze Food
 
-Enter a food item name (example: Apple, Banana, Burger)
-Click on Analyze Food button
 View nutritional information, health prediction, health score, and recommendations
 
 Step 6: Download Report
